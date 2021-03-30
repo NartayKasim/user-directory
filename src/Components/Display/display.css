@@ -1,0 +1,66 @@
+/* FONT SETTINGS: */
+#Id {
+    font-size: 1.5rem;
+    line-height: 0 !important;
+}
+
+#container-id {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1rem;
+    height: 2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+p, h3, strong, li {
+    font-size: 1rem;
+    line-height: 0;
+    margin-top: 2rem;
+}
+
+h3 {
+    margin-right: .5rem;
+}
+
+/* DISPLAY */
+.display-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.display {
+    background-color: white;
+    min-width: 65rem;
+    max-width: 65rem;
+    height: 35rem;
+    padding-left: 5rem;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: block;
+}
+
+#Name {
+    margin-bottom: .5rem;
+    display: inline;
+    border-bottom: 2px solid blue;
+}
+
+#name-container {
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}

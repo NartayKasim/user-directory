@@ -1,4 +1,4 @@
-const data = [
+const Data = [
   {
     id: 1,
     name: { first: "Waylin", last: "Lumsdon" },
@@ -286,4 +286,26 @@ const data = [
   }
 ];
 
-export default data;
+let formatData = Data.map(obj => {
+  let keys = Object.keys(obj).map(key => {
+    if (key === "favoriteMovies") {
+      key = "Favorite Movies"
+      return key
+    }
+    else {
+      let newKey = key.charAt(0).toUpperCase() + key.slice(1)
+      return newKey
+    }
+  })
+
+  let values = Object.values(obj)
+  let newArr = {}
+  keys.forEach((key, value) => newArr[key] = values[value])
+
+  obj = newArr
+
+  return obj
+})
+
+
+export default formatData;
